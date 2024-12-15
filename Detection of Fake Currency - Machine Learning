@@ -1,0 +1,186 @@
+Detection of Fake Currency using Machine Learning Techniques
+
+1. INTRODUCTION
+Fake currency is the money produced without the consent of the gov, creation of it is considered as a crime. The 
+elevation of color printing technology has increased the rate of fake currency note printing on a very large scale. 
+Years before, the printing could be done in a print cafe, but now anyone can print a note with much accuracy 
+using a simple laser printer. This results in the printing of fake notes instead of the real ones has been increased 
+very much. It is the biggest problem faced by most of the countries including India. Though Banks and other 
+large organizations has installed many machines to detect fake currency notes, it is really difficult for an average 
+person to distinguish between the two. This has led to the increase of corruption and production of fake notes in
+our country hindering our country's growth. Some of the methods to detect fake currency are watermarking, 
+security thread, latent image, techniques like counterfeit detection pens. Project aims at observing images taken 
+as input that is based on properties taken out after transformation and also on the problem based on machine 
+learning. Machine Learning is going to use pattern recognition as well as image processing for analyzing the 
+real properties. Therefore, the processes continued with analysis of images, to check their correctness by testing 
+the data set with respect of set theory, which will be visible but not mentioned in the model, for achieving 
+accuracy. 
+2. GENERAL OVERVIEW
+Machine Learning techniques help in building applications that support in detection of currency, through 
+automated system and algorithm. The aim of this work is to create a paradigm which can be supervised 
+with the help of related set theory so that it can be further beneficial in detecting feigned datasets with a 
+very few categorizing bugs. Therefore, another name referred as categorizing model grouped as data, 
+consisting of attributes and labels for the bills referring as fake or genuine. It identifies decision 
+boundaries which separate samples of two classes. 
+Since demonetization time it is seen that so much of fake currency is floating in market. In general by a 
+human being, it is not possible to identify fake note from the real ones not instead of various parameters 
+designed for identification as many features of forged note are similar to original one. In this paper six 
+supervised machine learning algorithms are applied on dataset available on UCI machine learning 
+repository for detection of Bank currency authentication. To implement this we have applied Support
+Vector machine, Random Forest, Logistic Regression, Naïve Bayes, Decision Tree, K- Nearest Neighbor 
+by considering three train test ratio 80:20, 70:30 and 60:40 and measured their performance on the basis 
+various quantitative analysis parameter like Precision, Accuracy, Recall, MCC, F1-Score and others. 
+And some of SML algorithm are giving 100 % accuracy for particular train test ratio [1].
+Bank note identification is most important approach based on machine learning and image processing 
+method. Many techniques involved in the classification of bank notes carried out experiments on 
+separated image data sets of each country’s. Deep learning is machine learning technique that process
+the features of original note. In the era of big data where for any real-world application, large amount of 
+data has to be processed, deep learning is the superior techniques. In this research, we studied bank n ote 
+of various countries by extracting its features in depth and analysis it using deep learning. Our system 
+recommended a deep learning-based algorithm to detect Forged bank note through general scanners that 
+can be used by persons to prevent personal monetary damages caused by fake bank note [2].
+Fake currency is one of the demerits which creates problems to nation's economy and hence impacts the 
+growth all over the world. Producing fake currency or producing fake features in the currency is
+considered to be a crime. Moreover, the study includes the analysis of widely acceptable statistical 
+classification technique for currency authentication. The comparative analysis of Logistic Regression 
+and Linear Discriminant Analysis (LDA) was performed to realize the better model for currency 
+authentication. It has been found that classification Model using Logistic regression shows better 
+accuracy of 99% then LDA [3].
+This paper proposes a method for fake currency recognition using K-Nearest Neighbors followed by
+image processing. KNN has a high accuracy for small data sets making it desirable to be used for the 
+computer vision task. In this, the banknote authentication dataset has been created with the high 
+computational and mathematical strategies, which give the correct data and information regarding the 
+entities and features related to the currency. Data processing and data Extraction is performed by 
+implementing machine learning algorithms and image processing to acquire the final result and accuracy
+[4].
+In recent years a lot of fake currency note is being printed which have caused great loss and damage 
+towards society. So, it has become a necessity to develop a tool to detect fake currency. This project 
+proposes an approach that will detect fake currency note being circulated in our country by using their 
+image. Our project will provide required mobility and compatibility to most peoples as well as cre dible 
+accuracy for the fake currency detection. We are using image processing and cloud storage to make this 
+app portable and efficient [5].
+ 
+Fake currency Identification and Forged Banknote Detection using image processing Banknotes are used 
+to carry out many financial activities in banks. There has been a drastic increase in the rate of fake notes 
+in the global market. Fake money is a challenge in all of the fields. Given methodology i.e. Fake 
+Currency recognition that is based on image processing techniques typically follows some essential 
+steps such as image gathering, preprocessing and recognition of the currency. The proposed system work 
+on 2 images first is front side of the real image of currency and second is the back side of real image on 
+which verification is to be performed. 
+3. TECHNOLOGIES AND METHODOLOGY
+3.1 TECHNOLOGIES USED
+3.1.1 Machine Learning
+Machine Learning is the processing of computers so they can learn from data. For ex, spam filter is a Machine 
+Learning technique that can learn to spam given examples of spam emails and examples of normal mails. The 
+ex that the system uses to learn are called the training set. Each training example is called a training set . In this 
+case, the task T is to flag spam for new mails, the experience E is the training data, and the performance 
+measure P needs to be defined; for example, you can use the percentage of correctly classified emails. This 
+measure is called accuracy and it is often used in classification tasks.
+Image processing is the process of converting an image into a digital form and performing certain operations to 
+get some important information from it. The image processing system usually treats all images as 2D signals 
+when applying certain predetermined signal processing methods. Image processing requires fixed sequences of 
+operations that are performed at each pixel of an image. The image processor performs the first sequence of 
+operations on the image, pixel by pixel. Once this is fully done, it will begin to perform the second operation, 
+and so on. The output value of these operations can be computed at any pixel of the image.
+3.2 METHODOLOGY
+The Figure 3.1 represents the system architecture of the proposed model. The objective of the design phase is to 
+produce overall design of the software. It aims to figure out the modules that should be in the system to fulfill all 
+the system requirements in an efficient manner.
+ 
+ 
+ Figure 3.1- Methodology
+Dataset: This dataset contains 500 images of Indian currency notes of different denominations, 250 genuine 
+notes and 250 fake notes. The dataset is labeled with information about the denomination and authenticity of 
+each banknote. These datasets can be used for training and testing machine learning algorithms for fake 
+currency detection. However, it is important to note that the performance of the algorithm depends on the size 
+and diversity of the dataset, as well as the quality of the images and the labeling process. It may be necessary to 
+augment the dataset or collect additional images to improve the accuracy of the algorithm. 
+Pre-processing: Pre-Processing is an important step in any machine learning task as it can significantly affect 
+the accuracy of the model. Here are some steps for pre-processing data for fake currency detection using the 
+decision tree algorithm:
+• Data Collection: Collection of real and fake currencies. This can include images of currency notes, videos of 
+people exchanging currency, and other related information.
+• Data Cleaning: Check the data for missing values, outliers, or other errors. You may need to remove or correct 
+some data points to ensure accurate results.
+• Data Encoding: Convert the data into a suitable format that the decision tree algorithm can understand. For 
+example, you can convert images into numerical arrays or encode categorical data using one-hot encoding.
+• Feature Selection: Identify the most important features that can help the decision tree algorithm differentiate 
+between real and fake currency. This can include features like watermark, security thread, texture, and serial 
+number. 
+• Data Splitting: Divide the data into training and testing sets. The training set will be used to train the decision 
+tree model, while the testing set will be used to evaluate its performance.
+• Data Normalization: Scale the data to ensure that all features are on the same scale. This can help the decision 
+tree algorithm make accurate predictions. 
+• Data Augmentation: Increase the size of the dataset by adding variations of the existing data. This can include 
+flipping images, rotating them, or changing the lighting conditions. 
+• Data Balancing: Ensure that the dataset has an equal number of real and fake currency examples. If the dataset 
+is imbalanced, the decision tree model may be biased towards the majority class.
+Canny Edge Detection: Canny edge detection is a popular algorithm for detecting edges in images, which can 
+be used as a basis for image segmentation. It converts the image to grey scale. Gray scaling is a technique used 
+in image processing and computer vision to convert a color image into a grayscale image. In the context of fake 
+currency detection, grayscale images can help identify patterns and features in banknotes that are not easily 
+visible in color images.
+Feature Extraction: Feature extraction is an important step in preparing data for machine learning algorithms. 
+Here are some features that can be extracted for fake currency detection using the decision tree algorithm:
+• Watermark: A watermark is a design that is embedded into the paper of a currency note. Real currency notes 
+have a distinct watermark that is difficult to replicate. The decision tree algorithm can be trained to identify the 
+presence or absence of a watermark and its characteristics, such as its shape, size, and position. 
+• Security Thread: A security thread is a thin strip that is embedded into the paper of a currency note. The thread 
+can be made of plastic or metal and has a unique pattern that is difficult to replicate. 
+• Texture: The texture of a currency note can be analyzed to detect if it is real or fake. Real currency notes have 
+a distinct texture that is difficult to replicate. The decision tree algorithm can be trained to identify the texture of 
+a currency note by analyzing features such as the spacing of the lines and the depth of the engravings.
+• Serial Number: Each currency note has a unique serial number that is printed on it. The decision tree 
+algorithm can be trained to identify the format of the serial number and its position on the note.
+VGG 19 Model: VGG-19 is a CNN that consists of 19 layers . We can upload a version of the network trained 
+on about a million images from various database . The required network can classify images into different object 
+categories, such as keyboard, mouse, monitor, and many animals. As a result, the network has learned rich 
+feature representations for large number of images. The network has an image input size of 224 X 224
+5. CONCLUSION
+An effective method for extracting and recognizing the properties of Indian rupee notes is p resented. 
+The study also includes detection and identification of counterfeit cash. Our future work will focus on 
+faster and more accurate fake currency identification with the use of modern image processing 
+algorithms. Our future scope will include currency denomination conversion. The proposed methodology 
+demonstrates the productive technique for fake currency detection of Indian currency notes dependent 
+on physical appearance. By using digital image processing, analysis of currency image is more accurate
+as well as this method is in terms of cost efficient and time consuming compared to existing technique. 
+MATLAB software is used for this analysis. The conferred approach offers AN economical technique of 
+pretend currency detection supported physical look. 3 necessary security measures explored for faux 
+currency detection are the protection thread, run brand, and identification mark. Image process 
+algorithms are applied to extract the options. 
+• To mix the multiple options, call a score of all the options were consolidated. The effectiveness of the 
+projected approach is tried by 100% recognition faux detection accuracy and therefore the low price 
+(near about1) of mean sq. error. 
+• The future perspective of the approach is to sight alternative national currencies and to infuse the 
+conferred technique into a mobile application, in order that its proving to be a larger use. the appliance 
+areas which will be helpful through the projected approach embody faux currency detection whereas 
+electronic currency exchange and cash deposit victimization ATM.
+6. ACKNOWLEDGEMENT
+The corresponding author is thankful to Dr Vani V, Associate Professor of the Department of Information 
+Science and Engineering Bangalore Institute Of Technology, Dr Asha T HOD of the Department of Information 
+Science and Engineering, Bangalore Institute of Technology for their valuable contributions in the preparation 
+of this journal.
+Conflict of interest: The authors declare that we have no conflict of interest.
+Funding agency: There has no such funding, particularly for this work.
+7. FUTURE WORK
+In Future, many applications can be developed which would be useful for regular as well as physically 
+challenged people, the same system can be developed for other Indian currencies and other country’s 
+notes. Also, the app’s front end can be further changed according to the user needs. This will enhance its 
+usage by increasing the user network as India is going to establish the largest digital network in the 
+world in next coming years. So, the application will be available in all android devices and IOS devices 
+in future if we work on it. The future view of this approach is to analyse alternative country currencies. 
+Techniques available today are not only fake note detector machine but they also provide some extra 
+facilities . These features can be added with the device that would make it as most trustful fake currency 
+detector along with counting feature that would be helpful for banking sector. This project discussed 
+algorithms for verifying Indian currency.
+8. REFERENCES
+[1] [1] Yadav, Anju, et al. "Evaluation of machine learning algorithms for the detection of fake bank currency." 2021 11th 
+International Conference on Cloud Computing, Data Science & Engineering (Confluence). IEEE, 2021.
+[2] [2] Jadhav, Megha, Yogesh kumar Sharma, and G. M. Bhandari. "Currency identification and forged banknote 
+detection using deep learning." 2019 International Conference on Innovative Trends and Advances in Engineering and 
+Technology (ICITAET). IEEE, 2019 
+[3] [3] Upadhyaya, Akanksha, Vinod Shokeen, and Garima Srivastava. "Analysis of counterfeit currency detection 
+techniques for classification model." 2018 4th International Conference on Computing Communication and 
+Automation (ICCCA). IEEE, 2018.
+[4] [4] Bhatia, Aman, et al. "Fake currency detection with machine learning algorithm and image processing." 2021 5th 
+International Conference on Intelligent Computing and Control Systems (ICICCS). IEEE, 2021. 
