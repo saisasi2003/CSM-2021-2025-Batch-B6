@@ -1,0 +1,424 @@
+Fake Currency Detection with Machine Learning Algorithm and Image Processing
+
+Abstract—This paper deals with the matter of identifying the currency that if the given sample of currency is fake. Different traditional strategies and methods are available for fake currency identification based on the colors, width, and serial numbers 
+mentioned. In the advanced age of Computer science and high computational methods, various machine learning algorithms are proposed by image processing that gives 99.9% accuracy for the fake identity of the currency. Detection and recognition methods over the algorithms include entities like color, shape, paper width, image filtering on the note. This paper proposes a method for fake currency recognition using K-Nearest 
+Neighbours followed by image processing. KNN has a high accuracy for small data sets making it desirable to be used for the computer vision task. In this, the 
+banknote authentication dataset has been created with the high computational and mathematical strategies , which give the correct data and information regarding the entities and features related to the currency. Data processing and data Extraction is performed by 
+implementing machine learning algorithms and image processing to acquire the final result and accuracy. Keywords—Accuracy, data extraction, features extraction, 
+image processing, K-Nearest. 
+I. INTRODUCTION
+In this century where the majority of people are aware of technology and how it works, many of them indulge in unlawful activities. One of such activities is the 
+production of fake currency which is practiced to deceive people. In this proposal, it is focused on this illegitimate practice and try to bring forward a solution for it. According to a survey, the maximum number of 
+cases of counterfeit in India still relate to fake currency, There were 132 cases of counterfeit currency in 2018, which shot up 37 percent to 181 in 2019[7]. In Order to stop this fraudulent activity, a system is proposed that can be integrated into electronic devices that will detect the fake note as soon as it is scanned by 
+the device. Some of the techniques which are considered are used previously and include KNN which will be utilized in the proposed system with enhanced accuracy. K-nearest neighbors (KNN) is an algorithm that stores all the available data and classifies a new data point based on the similarity. This 
+means when new data appears then it can be easily classified into a good suite category by using the KNN algorithm [6]. Usually, the Euclidean distance is used 
+as the distance metric. Then, it assigns the point to the class among its k nearest neighbors (where k is an integer). 
+As k-NN does not require the off-line training stage, its main computation is the on-line ‘searching’ for the k nearest neighbors of a given testing example. 
+Although using different k values are likely to produce different classification results, 1-NN is usually used as a benchmark for the other classifiers since it can 
+provide reasonable classification performances in many pattern classification problems. 
+
+In this straight strategy, some errors and drawbacks were observed that was not making the system and fake identification method more efficient. 
+ motion blur problem, 
+ Noise imposed by image capture instrument
+ Less efficient feature extraction technique
+Due to such problems faced in the major cases the concept for the implementation of image processing works, which purify the entities like shape, color, serial numbers in the form of images and brings more 
+distinction and efficiency in the implementation and work was introduced [3]. As the data set is small this KNN algorithm suits best for the system and highperformance measures scores are expected for the 
+same. Fake currency detection system not only reduces the circulation of counterfeit currency but also provides encouragement to the dealers to accept/make 
+payment through cash, refrains people from circulating fake notes and also ensures proper flow of currency in economy.
+II. LITERATURE SURVEY 
+Different types of study and research work have been carried out in earlier days a different time. Different enhancements and progress were observed [1]. In the 
+past studies the data collected for the fake note detection was with professional cameras but in those data, accuracy seen was to be fair and good due to simple machine learning algorithms. K nearest 
+neighbor algorithms were used traditionally for the detection of fake notes. Systems were getting slower when the data size became large. After that system 
+came across to classify the precision and recognition rate with some enhancement in Machine learning algorithms and deep learning concepts [12]. Due to 
+high and large data sets, data sets were getting distorted, and the precision was not effective a lot though it was 98%. All of these detections were 
+carried out earlier only with open cv and python but time and again with modern deep learning techniques data were collected with the count of 100 images per 
+denomination and then measured [11]. Accuracy of training and testing sets were measured. This brings the chain type efficiency that elongates to a larger 
+value in comparison to other techniques. Concept of the transfer learning was used in the system. The noise was also captured, and this was another problem due to 
+which much more advancement was required. After that, a Convolutional neural network came into the measurement for the error elimination. Loss trends were generally analyzed concerning training loss (TL) 
+and validation loss (VL). Accuracy trends were generally analyzed by training accuracy (TA). In 2021 the fake note is being detected with the algorithms of 
+efficient Machine learning, Deep convolutional neural 
+network, and followed by image processing. It has 
+shown the efficiency to be maximum in today's days. 
+III. METHODOLOGY 
+The data set was made by collecting high-quality 
+images of both genuine and counterfeit currency using 
+an industrial camera. The images have a dimension of 
+400x400 pixels[2]. Due to the type of lens used and 
+the distance to the investigated object, grayscale 
+pictures of 660dpi were captured. On these pictures, 
+Wavelet Transform was used to extract features from 
+the gathered images. The attributes gathered after the 
+Wavelet Transformation were as follows- 
+ Variance 
+ Skewness 
+ Kurtosis 
+ Entropy 
+ Class of the currency 
+First, four of the five derived attributes are continuous 
+and describe the features of the note where-as the fifth 
+attribute- ‘Class’, classifies the currency into fake by 
+giving it a value of 0 and genuine by giving it a value 
+of 1. The data set has a total of 1372 samples, out of 
+which 610 are genuine and 762 are counterfeit note 
+samples[9]. 
+A brief description of the data set is presented below- 
+ Fig.3 Dataset Description 
+On analysing the data, following observations was 
+found- 
+ The data is highly varied. This can be seen as 
+the maximum and mean values of all the 
+features vary greatly. 
+ Therefore, the data needs to be normalized to 
+prevent from the results being dominated by a 
+single attribute. 
+ The ‘Class’ feature has a binary value, 1 
+denoting a genuine sample and 0 denoting a 
+counterfeit sample. 
+Furthermore, after plotting each attriubte following 
+can be observed- 
+ Entropy is negatively skewed which implies 
+that the data has high entropy values[13]. 
+ It is observed that Kurtosis is positively 
+skewed. 
+Proceedings of the Fifth International Conference on Intelligent Computing and Control Systems (ICICCS 2021)
+IEEE Xplore Part Number: CFP21K74-ART; ISBN: 978-0-7381-1327-2
+978-0-7381-1327-2/21/$31.00 ©2021 IEEE 756
+Authorized licensed use limited to: San Francisco State Univ. Downloaded on July 01,2021 at 08:40:12 UTC from IEEE Xplore. Restrictions apply. 
+ The attributes variance and skewness are 
+evenly distributed across the spectrum. 
+ Fig.4 scaling dataset 
+After glancing at the distribution of the dataset, the 
+apparent observation is that the data needs to be scaled 
+as the values for all the attributes have relatively high 
+variation[14]. This will prevent the model from being 
+biased to a single attribute. 
+Lastly, by plotting the scatter plots for the given 
+attributes in the dataset the following are observed- 
+ It can be seen that genuine notes tend to have a 
+low variance value, when compared to the 
+counterfeit notes[8]. 
+ It can be seen from the scatter plot of entropy 
+and kurtosis that, when both combined they 
+perform a very weak task of separating the 
+data. Therefore, any alogrithm used on them 
+will provide with poor results. 
+ On the other hand, Skewness and variance 
+perform a very good job of segragation the 
+notes into fake and genuine. 
+Fig.5 features comparison 
+Look at the overall dataset, it can be seen that when all 
+the attributes are paired together, they provide good 
+training criteria that help in distinguishing the currency 
+notes[15]. This will help in training a model that can 
+provide higher accuracy. The key highlights from 
+exploring the data set were- 
+ The data needs to be normalized. 
+ There are no missing values. 
+ Outlier detection is not needed to be 
+performed. 
+A) Normalizing the dataset 
+After exploration of the data set, It is observed that the 
+data needs to be scaled so that the model is not biassed 
+towards a particular feature. For this, it has been 
+decided to keep the range of each feature between 0 
+and 1. To do so, the following formula is used- 
+ Fig.6 Normalization 
+To do so, MinMaxScaler is imported from the sklearn. 
+preprocessing library and performed the fit and 
+transform function to the features of the data set. After 
+performing the normalization the data set is looked at 
+below. 
+ Fig.7 Normalization of dataset 
+B) Algorithms Used to train the modelTraining of the data can be carried out with the 
+different functionalities and algorithm. For the purpose 
+of this project,it is decided to compare the working of 
+3 algorithms and perform a comparative study on 
+them. 
+ K- Nearest Neighbours 
+ Support Vector Classifier 
+ Gradient Boosting Classifier 
+1) K-Neartest Neighbors- It is a lazy learning 
+supervised algorithm. The reason it is called lazy is 
+because it doesn’t have a specialized training phase 
+and uses all the data for training while classification. It 
+is mostly used for classification predictive problems. 
+The way the algorithm works is that it classifies a 
+given data point by looking at its closest neighbour 
+and assigns a weight to them based on the distance. 
+The distance can be Euclidian, Manhattan,etc, and it 
+gives more weightage to the closer data points. There 
+are a couple of advantages which include- it is simple 
+to implement, flexible to the types of features and 
+naturally handles multi classes. However, the 
+drawback is that a lot of heavy computation work 
+happens while testing which makes it a slow 
+algorithm.
+For the data set used, KNN is a good option as the data 
+set isn’t huge so the computation time is not a major 
+Proceedings of the Fifth International Conference on Intelligent Computing and Control Systems (ICICCS 2021)
+IEEE Xplore Part Number: CFP21K74-ART; ISBN: 978-0-7381-1327-2
+978-0-7381-1327-2/21/$31.00 ©2021 IEEE 757
+Authorized licensed use limited to: San Francisco State Univ. Downloaded on July 01,2021 at 08:40:12 UTC from IEEE Xplore. Restrictions apply. 
+issue. Moverver, as it is non-parametric and do not 
+need to worry about the data distribution and it can the 
+decision boundary can take any form[16]. 
+2) Support Vector Classifier- It is a supervised 
+machine learning algorithm which is mostly used for 
+classficiation and regression problems. In this 
+algorithm Each point is plot in a n-dimensional plane 
+with the value of the point being the data point of the 
+sample. Then the classification is performed by finding 
+a hyper-plane that is the best fit for dividing the 
+classification. Some advantages of this algorithm areperforms well for non linear decision boundaries, uses 
+a subset of training points so is memory efficient, and 
+is versatile. Some of the drawbacks include- if the 
+number of features are greater than the number of 
+sample the algorithm is likely to underperform and it is 
+quite taxing to train[5]. 
+This algorithm can work on our data set as it is 
+classified into 2 classes and the number of features is 
+quite less that the number of samples. Moreover, as 
+discussed above, even 2 features provide us with some 
+clear distinction between counterfeit and genuine 
+notes. Therefore, after projecting to a higher 
+dimensional plane we should get better results. 
+3) Gradient Boosting Classifier- It is an ensemble 
+of weak learner which when work together help in 
+providing a very accurate predicting model. A weak 
+learner are algorithms which provide models with 
+accuracy being slightly better than randomly choosing 
+an answer. Therefore, they are structured using a 
+decision tree type model in which layers of yes and no 
+type questions are asked to get a predictive model. 
+Some of its advantages are that it is easy to interpret 
+and implement, can effectively capture non-linear 
+function dependencies, it is extremely flexible and 
+cutomizable and finally builds a robust model using 
+the output of many weak learners. However, they 
+consume a lot of memory and can be very time 
+consuming with the ensemble is large. 
+ This algorithm can be used on our data set as layered 
+questions can be asked and the data and be classified 
+according. Moreover, as the number of features are 
+less the training and testing time is not going to huge. 
+C) Implementation 
+For this project the steps we are going to follow are as 
+follows- 
+ Preprocess and normalize the data set. 
+ Split the data using K-fold cross validation 
+technique. 
+ Training the model using the algorithms 
+discussed above. 
+ Calculate the performance measures. 
+Initially, the data set was loaded and preprocessed. As 
+discussed in the above sections data normalization was 
+required that was done using the MinMaxScaler 
+present in the sklearn. preprocessing library. 
+Independent and Dependent Variables- As discusses 
+above the data set contains 5 columns with 4 being the 
+features extracted after Waveform transform and the 
+5th one being the class that distinguishes between fake 
+and genuine notes. For this project, we took the first 4 
+attributes-‘variance’, ‘skewness’, ‘kurtosis’ and 
+‘entropy’ as the independent or input variables and the 
+‘class’ as the target or dependent variable. Data is split 
+after the normalization and preprocessing works. We 
+used the Kfold functionality present in the 
+sklearn.model_selection to split the data. The purpose 
+of using this library is it helps to gain a more accurate 
+understanding of the algorithm. As the data is split into 
+k blocks of data set and the algorithm is run with each 
+block once as the test set. This helps in gaining a 
+complete understanding of the model as each sample is 
+used for both training and testing. Another reason we 
+used this method was that our data set was limited and 
+therefore, didn’t take too much extra time in training 
+through this method.
+Once the data was split into training and testing sets, 
+we moved on to building the model. 
+D) Building the Model 
+For this project, the required classifiers were imported 
+from the sklearn library. We made a function that took 
+parameters as the training and testing data sets along 
+with the algorithm and returned a trained model with 
+its performance measure scores. We repeated this for 
+every fold and accumulated results for every pass in a 
+list. Lastly, the cross-validation predict module is used 
+to build a confusion matrix for all the algorithms. 
+Finally, plotted the results to gain a visual 
+understanding of how the algorithms performed[4]. 
+E) Performance measures
+Performance measures are used to check the 
+correctness of the model. For this project, accuracy, 
+precision, and f-score are performance measures. 
+graphs were plotted for each performance measure and 
+compared the results. k-fold cross-validation technique 
+is used for this project. As discussed above the KFold 
+and cross-validation predict module from the sklearn 
+model selection library. This technique divides the 
+data set into the number of ‘k’ blocks specified by the 
+user and runs the algorithm once for every block as a 
+test set 10 for the value of k. After building the model 
+it is analyzed using the performance measures 
+discussed above. 
+IV. RESULT ANALYSIS 
+After training the model using the data set and the 
+algorithms described above, we tested them to see how 
+they performed. Calculating the performance measures 
+described above, we were able to gain an understanding 
+of how every algorithm performed. Below are the 
+accuracy, precision, and f-scores for each algorithm. 
+Proceedings of the Fifth International Conference on Intelligent Computing and Control Systems (ICICCS 2021)
+IEEE Xplore Part Number: CFP21K74-ART; ISBN: 978-0-7381-1327-2
+978-0-7381-1327-2/21/$31.00 ©2021 IEEE 758
+Authorized licensed use limited to: San Francisco State Univ. Downloaded on July 01,2021 at 08:40:12 UTC from IEEE Xplore. Restrictions apply. 
+Algorithm Accuracy Precision FScore
+KNN 99.9% 99.9% 99.9%
+SVC 97.5% 99.7% 98.6%
+GBC 99.4% 99.9% 99.7%
+ Table.1 Algorithm Comparison accuracy 
+Below is the graphical representation of the above 
+results, 
+ Fig.8 Algorithm Comparison 
+ Table.2 Matrix 
+As can be seen from the above results, KNN performs 
+with the most consistency. It has the lowest accuracy of 
+99.2%., however, 80% of the time it gave a result with 
+100% accuracy. Comparing the other two algorithms, it 
+can be seen that GBC was the closest to the 
+performance of KNN with an accuracy of 99.4% while 
+SVC had the lowest result of 97.5%. However, it can 
+be noted that all three algorithms had an accuracy 
+above 97% which is quite impressive. Similar results 
+can be derived by comparing the results for precision 
+and f-score. Moreover, taking a look at the confusion 
+matrices, it can be noticed that KNN gave only 2 wrong 
+predictions whereas GBC gave 6 and SVC predicted 26 
+samples incorrectly. This consolidates the fact that 
+KNN outperforms the rest of the algorithms for this 
+case. As such a project needs to have high accuracy as 
+predicting even some notes as false positives or 
+negatives can cause major faults, it will not be possible 
+to use the model build by using SVC as it produces 26 
+faulty predictions. Looking at these results it can be 
+seen that for the given data set the most accurate 
+algorithm to use is KNN. Moreover, it can be noted 
+that KNN predicted all genuine notes correctly, which 
+is essential in the real world as predicting counterfeit as 
+an authentic currency will be more detrimental. 
+V. CONCLUSION AND FUTURE WORK 
+After implementing and analyzing the results gathered, 
+we can deduce that all the three algorithms used were 
+exceptionally accurate at classifying notes as genuine 
+and counterfeit based on the used data set. However, 
+KNN outperformed the other two as discussed in the 
+above section. It had an accuracy of 99.9% with 
+classifying incorrectly classifying only 2 counterfeit 
+notes. However, this result is limited as the data set 
+used was quite small. It had a total of 1372 samples 
+which when considered in the real-world scenario 
+might not perform as well as it has currently. To build 
+on this, we propose to form a much larger data set with 
+real-world like pictures of real and fake currency notes. 
+This will help in providing a much more realistic 
+model. Moreover, with a large data set available, deep 
+learning algorithms like Convolutional Neural 
+Networks or CNN can be applied which have high 
+accuracy in image processing scenarios. Furthermore, 
+by using CNN the project can directly analyze images 
+as input, and wavelet transformation will not be 
+required. This can make the system more convenient 
+and user friendly to use. Moreover, as it is likely to be 
+used in financial institutions it will be more convenient 
+for users to directly click a picture and get it verified, 
+this can be done with the help of CNN as mentioned 
+above. Hence, to make the project more robust and 
+professional the above suggest measures can be 
+implemented[10]. 
+ACKNOWLEDGMENT
+The Authors are indebted to the central library of 
+Delhi Technological University, Delhi India, for 
+providing all the access to research materials with the 
+lab required to successfully complete the research 
+work. 
+REFERENCES
+[1] D. V. Kapare, S. Lokhande, and S. Kale, 
+“Automatic Cash Deposite Machine With Currency 
+Detection Using Fluorescent And UV Light,” vol. 3, 
+pp. 309–311, 2013. 
+[2] M. N. Rathore and J. Sagar, “A Review on Fake 
+currency detection using feature extraction,” vol. 10, 
+no. 11, pp. 407–411, 2019. 
+[3] K. Santhanam, S. Sekaran, S. Vaikundam, and A. 
+M. Kumarasamy, “Counterfeit currency detection 
+technique using image processing, polarization 
+principle and holographic technique,” Proc. Int. 
+Conf. Comput. Intell. Model. Simul., no. Figure 2, 
+pp. 231–235, 2013, doi: 10.1109/CIMSim.2013.44. 
+[4] P. Ponishjino, K. Antony, S. Kumar, and S. 
+Jebakumar, “Bogus currency authorization using 
+HSV techniques,” Proc. Int. Conf. Electron. 
+Commun. Aerosp. Technol. ICECA 2017, vol. 2017-
+January, pp. 179–183, 2017, doi: 
+10.1109/ICECA.2017.8203667. 
+[5] Q. Zhang and W. Q. Yan, “Currency Detection and 
+Recognition Based on Deep Learning,” Proc. AVSS 
+2018 - 2018 15th IEEE Int. Conf. Adv. Video SignalBased Surveill., pp. 0–5, 2019, doi: 
+10.1109/AVSS.2018.8639124. 
+[6] A. Upadhyaya, V. Shokeen, and G. Srivastava, 
+“Analysis of counterfeit currency detection 
+KNN SVC GBC
+760 2 736 26 759 3 
+0 610 0 610 3 607
+Proceedings of the Fifth International Conference on Intelligent Computing and Control Systems (ICICCS 2021)
+IEEE Xplore Part Number: CFP21K74-ART; ISBN: 978-0-7381-1327-2
+978-0-7381-1327-2/21/$31.00 ©2021 IEEE 759
+Authorized licensed use limited to: San Francisco State Univ. Downloaded on July 01,2021 at 08:40:12 UTC from IEEE Xplore. Restrictions apply. 
+techniques for classification model,” 2018 4th Int. 
+Conf. Comput. Commun. Autom. ICCCA 2018, pp. 
+1–6, 2018, doi: 10.1109/CCAA.2018.8777704. 
+[7] S. Arya and M. Sasikumar, “Fake Currency 
+Detection,” 2019 Int. Conf. Recent Adv. EnergyEfficient Comput. Commun. ICRAECC 2019, pp. 
+2019–2022, 2019, doi: 
+10.1109/ICRAECC43874.2019.8994968. 
+[8] A. Kumar and A. Kumar, “Dog Breed Classifier for 
+Facial Recognition using Convolutional Neural 
+Networks,” pp. 508–513, 2020. 
+[9] M. Haider Ali, “Thesis Report on Fake Currency 
+Detection using Image Processing Method,” Akiful 
+Mohaimin Rifat Islam Shahriar Chowdhury, no. 
+13301148, pp. 1–38, 1330. 
+[10] M. N. Shende and P. P. Patil, “A Review on Fake 
+Currency Detection using Image Processing,” Int. J. 
+Futur. Revolut. Comput. Sci. Commun. Eng., vol. 4, 
+no. 1, pp. 391–393, 2018. 
+[11] T. Agasti, G. Burand, P. Wade, and P. Chitra, “Fake 
+currency detection using image processing,” IOP 
+Conf. Ser. Mater. Sci. Eng., vol. 263, no. 5, pp. 88–
+93, 2017, doi: 10.1088/1757-899X/263/5/052047. 
+[12] P. . P. Binod Prasad Yadav, C. S. Patil, R. R. Karhe, 
+“An automatic recognition of fake Indian paper 
+currency note using MATLAB,” Certif. Int. J. Eng. 
+Sci. Innov. Technol., vol. 9001, no. 4, pp. 2319–
+5967, 2008, [Online]. Available: 
+http://www.ijesit.com/Volume 3/Issue 
+4/IJESIT201404_77.pdf. 
+[13] M. A. Gaikwad, V. V Bhosle, and V. D. Patil, 
+“Automatic Indian New Fake Currency Detection 
+Technique,” Int. J. Eng. Res. Technol., vol. 6, no. 
+11, pp. 84–87, 2017. 
+[14] S. Adhikari, S. Thapa, and B. K. Shah, 
+“Oversampling based Classifiers for Categorization 
+of Radar Returns from the Ionosphere,” Proc. Int. 
+Conf. Electron. Sustain. Commun. Syst. ICESC 
+2020, no. Icesc, pp. 975–978, 2020, doi: 
+10.1109/ICESC48915.2020.9155833. 
+[15] A. Ghimire, S. Thapa, A. K. Jha, S. Adhikari, and 
+A. Kumar, “Accelerating business growth with big 
+data and artificial intelligence,” Proc. 4th Int. Conf. 
+IoT Soc. Mobile, Anal. Cloud, ISMAC 2020, pp. 
+441–448, 2020, doi: 10.1109/ISMAC49090.2020.9243318. 
+Proceedings of the Fifth International Conference on Intelligent Computing and Control Systems (ICICCS 2021)
+IEEE Xplore Part Number: CFP21K74-ART; ISBN: 978-0-7381-1327-2
+978-0-7381-1327-2/21/$31.00 ©2021 IEEE 760
+Authorized licensed use limited to: San Francisco State Univ. Downloaded on July 01,2021 at 08:40:12 UTC from IEEE Xplore. Restrictions apply. 
