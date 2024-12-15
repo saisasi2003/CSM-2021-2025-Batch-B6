@@ -1,0 +1,165 @@
+Fake Currency Detection using Deep Learning Technique
+INTRODUCTION
+Counterfeiting refers to an illegal copy of the currency 
+of origin. Therefore, counterfeit currency is not approved by 
+the government. RBI is the only body responsible for printing 
+banknotes in India. Every year, the RBI has to deal with the 
+problem of counterfeit banknotes once filtered and placed on 
+the market. Currently with the development of better image
+processing methods, new methods for identification of 
+currency is designed by analysing specific safety information 
+present in the currency. The safety features are watermarks, 
+hidden images, security threads, and optically variable inks. 
+Therefore, to determine the currency using image processing, 
+extract the specific statistics from the currency image and select 
+the correct recognition approach. The main methods for 
+currency recognition is by characteristic geometric size [1] and 
+by characteristic texture [2]. The general steps followed by 
+image processing approach is to acquire image, to detect edge, 
+to convert image to gray scale, feature extraction, image 
+segmentation and decision making [3-4]. The drawback of 
+these approaches are detection efficiency is less since feature 
+extraction is a challenging task. To overcome this problem now 
+the trend is towards deep learning, since it is a multilayer neural 
+network. The deep neural network is effective for different 
+application in real time.
+In general, to form a deep neural network, we need a 
+large set of image data for the activity to be done. But thanks 
+to transfer learning technique, we only need a small amount of 
+data sets. What we do is take a model already trained in a large 
+data set and use our weights to reconstruct the small data set 
+we have. In this way, a large data set is not necessary and the 
+model is also designed correctly. Hence in this paper 
+II. BACKGROUND STUDY (LITERATURE)
+in every proposed system developed using various algorithms 
+has their own disadvantages one of the most effective methods 
+of counteracting counterfeiting can be to use easily accessible 
+and effective software to detect counterfeit currency database 
+under training set is trained using these algorithms a method 
+for determining the currency in real time for classifying the 
+currency is proposed the currency of image acquisition is based 
+on currency discovery when the size of various denominations 
+is obtained and the features are extracted it gives the 
+information to kohonens training network this scheme is good 
+with high speed and recognition accuracy in support vector 
+machine based currency recognition is presented it segments 
+our currency into various regions with our own core linear 
+weighing through various forms of basic training matrices and 
+is studied using semi-defined programming are used to obtain 
+ideal weights use of rgb and hsv shade astral model in the 
+image processing helps in legal tender detection with new 500 
+and 2000 notes it can be detected faster by making samples of 
+these banknotes this system used for automatic legal tender 
+recognition based on resemblance processing the legal tender 
+resemblance is speak for in the space of differences therefore 
+is a angle astral composed by contrast the resemblance and a 
+series of prototypes each measurement measures the 
+dissimilarity in the middle of the resemblance in question with 
+the prototype to distinguish between two images the local key 
+points of each resemblance are identified and described based 
+on legal tender characteristics it is possible to effectively 
+identify the relevant key points between two resemblance due 
+to the limited number of real-life counterfeit currencies svm is 
+used to detect counterfeit currencies so only authentic 
+currencies are required for authentication and to train classifier 
+10 in recent years counterfeiting using neural network is good 
+at detection in 11 it was found that the functions were passed 
+through direct feed forward neural network fnn and is therefore 
+used for legal tender recognition as well as verification to 
+detect it uses the color information mined from currency but it 
+leads to high risk of error and also makes the empirical 
+consequence to be less accurate an approach additionally back 
+propagation network and principal component analysis when 
+used for feature extraction the approach is successful with an 
+additional investigation 12 in convolutional based neural 
+network when the number of layers are more then complexity 
+is also more 13 but convolution neural network is robust and 
+detection speed is faster 14 in 15 the problem of stochastic 
+gradient slope sgd is been explored and points out due to sgd 
+tilt the previous set of random parameters drops sharply then it 
+may affect the overall performance of the detection process 
+hence in our presented method we have used convolutional 
+neural network with adam optimization to detect fake legal 
+tender note
+III. METHODOLOGY
+In this proposed system, our relevance is to focus on detection 
+of fake currencies which is spread in Indian market. In our 
+work fake currency is identified by extracting the security 
+thread feature in the currency note. For detecting the fake 
+currency, the most popular method in deep neural network 
+called transfer learning using Alex net is adopted. Alex net 
+consists of convolutions, max pooling, dropout, ReLU 
+activations and fully-connected layers. In transfer learning the last three 
+layers are fine tuned to accommodate the requirement of our 
+proposed work. The ‘fc8’ layer is tuned with a weight learning 
+factor and bias learning factor for accurately extracting the 
+latent feature from the image. The weight gives the impact of 
+the input on the network and bias is used to adjust the output 
+with weighted sum of inputs to the neuron. The accuracy of 
+learning feature grows with the weight and bias learning factor, 
+record is given as information. After the effective finishing of 
+activity the outcome is anticipated and shown
+The input image is usually two-dimensional, so the object 
+map is also two-dimensional. The convolution layer applies a 
+specified number of filters to the input image. The mechanism 
+is as follows. The filter is an array of numbers the same size as 
+the input image. This filter moves to each pixel value and 
+multiplies by each filter number by the corresponding pixel 
+value in which it is positioned and calculates multiplication by 
+element. For each pixel position, each multiplication is added 
+to make it an element of the output matrix called a feature map.
+Another parameter to consider is the stride. This is the 
+amount of pixels that the strainer matrix moves each time it is 
+moved to a different position on the input image. As a general 
+rule, the passage is 1, which allows us to leave all the 
+decreasing spatial samples for POOL levels. An element of the 
+smart activation function is applied after each convolution 
+layer. Using the activation function, network linearity is 
+interrupted to detect more complex linear regression functions. 
+The function for activating a rectified linear unit is defined as 
+max (0, x). The spatial contact of the output data obtained from 
+the single feature map and the total values of the secondary 
+matrix value help to describe the value of the physical domain. 
+Select maximum grouping, which simply shows maximum 
+activation as seen in the region. The maximum coupling 
+operation for a 2x2 matrix 
+aram Nayak for his valuable 
+suggestion, expert advice and moral support in the process of 
+preparing this paper.
+REFERENCES
+[1] D-F Wang, and S-W Lian, “Automatic selling tickets machine on 
+railway station and cash recognition technology”, Computer 
+System Applications, Vol. 7, pp. 12-14, 1999
+[2] Z-X Ymg, Z-B Qian and J-G Li. “Currency recognition using 
+mathematical morphology and neural networks”, Journal of 
+Shanghai Jiaotong University, Vol. 33, No. 9, pp. 1142-1145, 1999
+[3] R Mirza, and V Nanda, “Design and implementation of Indian 
+paper currency authentication system based on feature extraction by 
+edge based segmentation using Sobel operator”, International 
+Journal of Engineering Research and Development, Vol. 3, No. 2, 
+pp. 41-46, 2012.
+[4] J Guo, Y Zhao, and A Cai, “A reliable method for paper currency 
+recognition based on LBP”, IEEE International Conference on
+Network Infrastructure and Digital Content, pp. 359-363, 2010. 
+[5] PJ Grace, and A Sheema, “A survey on fake Indian paper currency 
+identification system”, International Journal of Advanced Research 
+in Computer Science and Software Engineering, Vol. 6, No. 7, July 
+2016. 
+[6] S T Gouri, PK Akshay, M Sneha, and S Bharat, “Detection of fake 
+Indian currency”, International Journal of Advance Research, Ideas 
+and Innovations in Technology, Vol. 4, No. 2, pp. 170-176, 2018.
+[7] E H Zhang, B Jiang, JH Duan, and ZZ Bian, “Research on paper 
+currency recognition by neural networks. In: International 
+conference on machine learning and cybernetics, Vol. 4, pp. 2193–
+2197, 2003
+[8] C Y Yeh, WP Su, and SJ Lee, “Employing multiple-kernel support 
+vector machines for counterfeit banknote recognition”, Applied 
+Soft Computing (Elsevier), Vol. 11, No. 1, pp. 1439–1447, 2011
+[9] M A Kumar, B Bhuvaneswari, and D Dhanasekaran, “Detection 
+and recognition of counterfeit currency notes”, International 
+Journal of Pure and Applied Mathematics, Vol. 119, No. 17, pp. 
+1535-1540, 2018. 
+[10] M Patil, J Adhikari, R Babu, “Fake currency detection using image 
+processing”, International Journal on Future Revolution in 
+Computer Science & Communication Engineering, Vol. 4, No. 4, 
+pp. 865-868, 2018. 
